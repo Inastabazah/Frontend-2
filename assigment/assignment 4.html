@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <lable for="username">User name</lable>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        maxlength="20"
+        placeholder="username"
+      /><br /><br />
+
+      <lable for="emai">Email</lable>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+      /><br /><br />
+      <lable for="birth Date">Birth date</lable>
+      <input type="date" name="birth Date" id="birth Date" /><br /><br />
+      <lable for="datetime">Registrated datetime</lable>
+      <input
+        type="datetime-local"
+        name="edatetime"
+        id="datetime"
+        placeholder="Email"
+      /><br /><br />
+      <lable for="age">Age</lable>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="Age"
+        min="0"
+      /><br /><br />
+      <lable for="Password">Password</lable>
+      <input
+        type="password"
+        name="Password"
+        id="Password"
+        placeholder="new password"
+      /><br /><br />
+      <lable for="upload File">Upload profile picture</lable>
+      <input
+        type="file"
+        name="upload File"
+        id="upload File"
+        accept="image/png, image/jpeg"
+      /><br /><br />
+      <lable for="course">Courses:</lable><br />
+      <input type="checkbox" name="course" id="course" value="Css" />
+      <lable>Css</lable>
+      <input type="checkbox" name="course" id="course" value="Html" />
+      <lable>Html</lable>
+      <input type="checkbox" name="course" id="course" value="Javascript" />
+      <lable>avascript</lable><br /><br />
+      <input type="radio" name="gender" value="gender" />
+      <lable for="gender" id="gende">Male</lable>
+      <input type="radio" name="gender" value="gender" />
+      <lable for="gender" id="gende">Female</lable><br /><br />
+      <textarea placeholder="notes" rows="12" cols="100"></textarea><br /><br />
+      <lable >droupdown list</lable>
+
+      <select >
+        <option disabled selected>--select course--</option>
+        <optgroup label="frontend">
+            <option value="html">Html</option>
+            <option value="css">Css</option>
+            <option value="Javascript">Javascript</option>
+        </optgroup>
+        <optgroup label="backend">
+            <option value="c#">C#</option>
+            <option value=".net">.net</option>
+            <option value="Java">Java</option>
+        </optgroup>
+        
+
+
+
+      </select><br><br>
+      <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank"
+        >w3school</a
+      ><br /><br />
+      <input type="submit" value="signup" formtarget="-blank" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
