@@ -4,58 +4,45 @@ body{
 }
 .layout{
     display: flex;
-    flex-direction: row;
+    width: 100wv;
 }
 
-.layout > .sidebar{
+.sidebar{
     background-color: aqua;
     font-size: 20px;
     width:30%;
     padding:20px;
-    overflow-y: auto;
+    overflow: auto;
     overflow-x: hidden;
-    height:100vh  ;
-    max-width: 200px;
+    height: 100vh;
     
 }
 
-.sidebar> nav{
+.sidebar a{
     display: flex;
     flex-direction: column;
-    
+    text-decoration:none ;
     gap: 8px;
 }
 
-.sidebar> nav > a{
-    text-decoration: none;
-    font-size: 20px;
-}
 .content{
-    
-    
-    padding: 20px;
-    width: 60%;
-    
-    overflow: auto;
-    height: calc(100vh- 40px);
-    
-}
-
-.card-section {
-   
-   
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    overflow: auto;
-    gap: 12px;
-
-
-
-
+    flex-wrap:wrap;
+    padding: 20px;
+    margin: 20px;
+    width: 60%;
+    gap: 20px;
+    
+    
 }
+
 .card{
-    width: 25%;
-    height: 50px;
-    background-color: antiquewhite;
+   
+   background-color: aliceblue; width: 25%;
+    
+    
+    height: 80px;
+   width: 7.5%;
+
+
 }
