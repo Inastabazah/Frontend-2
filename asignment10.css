@@ -14,6 +14,7 @@ height: 100vh;}
 
    background-color: rgb(26, 147, 147);
    gap: 12px;
+   flex-wrap: wrap;
 }
 
 .main>.content1{
@@ -31,6 +32,7 @@ border: 2px solid black;
 padding: 20px;
 gap: 12px;
 display: flex;
+
 
 
 }
