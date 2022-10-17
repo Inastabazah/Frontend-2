@@ -1,0 +1,36 @@
+*{box-sizing: border-box;}
+
+body{margin: 0;}
+main{ height: 100vh;
+display: flex;}
+
+.dashboard{display: flex;
+    flex-direction:row;
+    border: 2px solid black;
+    padding: 20px;
+   margin: auto;
+  max-width: 1150px;
+    
+   
+    }
+img{width: 100%;}
+
+
+.section{ flex: 1;
+    background-color: rgb(19, 226, 226);}
+
+
+    .col{display: flex;
+    align-content: center;
+justify-content: center;}
+
+form{ display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 20px;
+align-items: center;}
+ h1{align-content: center;}
+ 
+ button{ border: none;
+color: aliceblue;
+background-color: blue;}
