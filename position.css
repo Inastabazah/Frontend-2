@@ -37,7 +37,8 @@ img {
 }
 .centered {
   position: absolute;
-align-items: center;
+text-align: center;
 width: 100%;
-top: 50%S;
+top: 50%;
+
 }
