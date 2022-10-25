@@ -150,9 +150,12 @@ main{padding: 1rem;
     border-radius: 9px;
     transition: 0.7s ease;
     text-align: center;
+    text-rendering;
+    align-items: center;
     }
 
-    .card h3{color: var(--white);}
+    .card h3{color: var(--white);
+    font-size: 1.5rem;}
     .card p{color: var(--blue);}
     .card ul{color: var(--blue);}
 
@@ -160,11 +163,11 @@ main{padding: 1rem;
     .card:hover{
         transform: scale(1.1);
     }
-    .card .icon{
+    .card .icon i{
         color: var(--yellow);
-        font-size: 1em;
+        font-size: 2.5em;
     }
-    .card-info h3{ color: var(--light-blue);
+    .card-info h3{ color: var(--white);
     }
     
     
