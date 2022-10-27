@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+
+body{margin: 0;}
+
+
 :root{
    --darkblue:#040b14;
    --blue:#007aff;
@@ -21,10 +25,12 @@ header{
     position: sticky;
     top: 0;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 1rem 0.5rem;
     z-index: 1;
     height: auto;
-    
+    width: 100%;
+   
+   
     }
 .header{
     margin: auto;
@@ -45,19 +51,19 @@ max-width: 300px;
 .header .logo img {margin: 9px 9px;
     display: block;
     width: 60px;
-    border: 1px solid #2c2f3f;
+    border: 1px solid var(--yellow);
 border-radius: 50%;
 }
 .header .logo h1{font-weight: 600;
 font-size: 2rem;}
 
-.navigation{margin: auto 0;}
+.navigation{margin: 0;}
 
 .navigation a{color: var(--white);
     
     font-size: 1.2rem;
     font-weight:600;
-margin: 12px 12px;
+margin: 1px 5px;
 }
 
 .navigation a:hover{ color: var(--yellow);}
@@ -66,31 +72,36 @@ margin: 12px 12px;
 
 
 
-main{padding: 1rem;
+main{padding: 0.5rem;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    
+}
     
     section{ 
     margin: auto;
+    padding :1.5rem
     }
     .main{
         display: flex; 
         background-color: var(--white);
-    width: 100%;
+        width:100%;
     min-height: 100vh;
     background-image: url(/style1/istockphoto-679554232-612x612.jpg);
-    background-size: cover;
+    background-size:cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position:center  ;
     align-items: center;
-    padding: 1rem 0 0 162px;
+    padding: 0.5rem;
     }
     
     
     
     .main h2{color: var(--darkblue);
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;}
+
+
     .main span{color: var(--dark-blue);
         display: inline-block;
         font-size: 2rem;
@@ -101,36 +112,39 @@ main{padding: 1rem;
     .main-btn{background-color: var(--blue);
     color: var(--yellow);
     border-radius: 16px;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 900;
     padding: 1rem 1.3rem;
     margin-top: 1.2rem;
     margin-bottom:1.2rem ;
     display: inline-block;
-    transition: 0.7s ease;
+    transition:  transform 0.7s; 
     }
     
-    .main-btn:hover{background-color: var(--blue);
-    transform: scale(1.7);}
+    .main-btn:hover{
+
+        background-color: var(--blue);
+    transform: rotate(360deg);}
     
     .social-icons a {color: var(--yellow);
     font-size: 2rem;
     margin-inline-start: 10px;
+    
     }
     
-    /* srervice*/
+
 
    
     .title{text-align: center;
     color: var(--yellow);
-    font-size: 2rem;
-    margin: 2rem 1rem ;
+    font-size: 3rem;
+    margin: 6rem 2rem  ;
 }
     
     .contant{display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.5rem ;
+    gap: 1.2rem ;
     justify-content: center;
     padding: 2rem;
     
@@ -150,14 +164,16 @@ main{padding: 1rem;
     border-radius: 9px;
     transition: 0.7s ease;
     text-align: center;
-    text-rendering;
     align-items: center;
     }
 
     .card h3{color: var(--white);
-    font-size: 1.5rem;}
-    .card p{color: var(--blue);}
-    .card ul{color: var(--blue);}
+    font-size: 2rem;}
+    .card p{color: var(--blue);
+    font-size: 1.2rem;}
+    .card  ul {color: var(--blue);
+    font-size: 1.2rem;}
+    
 
     
     .card:hover{
@@ -165,21 +181,21 @@ main{padding: 1rem;
     }
     .card .icon i{
         color: var(--yellow);
-        font-size: 2.5em;
+        font-size: 3em;
     }
     .card-info h3{ color: var(--white);
     }
     
     
-    .service-section{background-color: var(--dark-blue);
-        padding:6rem 1rem;
+    section#service.service-section{background-color: var(--darkblue);
+        padding:1rem 1rem;
     }
     
     .service-card{background-color:white;
     border: 1px solid #fff;
     min-height: 160px;
-    width: 450px;
-    border-radius: 8px;
+    width: 350px;
+    border-radius: 50%;
     transition: 0.7s ease;
     }
     .service-card:hover{transform: scale(1.1);
@@ -188,7 +204,7 @@ main{padding: 1rem;
     .service-card-img img{
         width: 100%;
         max-height: 200px;
-        border-radius: 8px;
+        border-radius: 50%;
     
     }
     
@@ -202,17 +218,32 @@ main{padding: 1rem;
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    color:var(--white)}
+    color:var(--white);
+    
+
+}
     .footer-title{font-size: 1.2rem;
     font-weight: 700;}
     .footer-title span{ color: var(--yellow);}
     
-    @media(max-width :1000px){
-        .main{padding-left: 5px;}
-        header{padding: 0.5rem 0.5rem;}
-        .project-card {width: 320px;}
-    }
     
+ @media(max-width :1000px){
+    .main{padding-left:20px;}
+    header{padding: 0.5rem 0.5rem ;}
+    .navigation a { margin:0}
+}
+
+
+@media(min-width :400){
+   header{position: fixed;
+    width: 100%;
+max-width: inherit;}
+footer{position: fixed;
+    width: 100%;
+max-width: inherit;}
+}
+
+
    
     
 
