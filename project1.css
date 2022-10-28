@@ -16,18 +16,23 @@
   --yellow: #ffc107;
   --white: #f5f8fd;
 }
+
+
+
 a {
   text-decoration: none;
 }
 
 header {
   background-color: var(--darkblue);
-  position: sticky;
-  top: 0;
+  
   align-items: center;
   padding: 1rem 0.5rem;
   z-index: 1;
   height: auto;
+  position: sticky;
+  top: 0;
+  
 }
 
 .header {
@@ -221,12 +226,16 @@ section#service.service-section {
   padding: 3rem 0;
 }
 
+
+
+
 .footer {
   background-color: var(--darkblue);
   display: flex;
   justify-content: space-between;
   padding: 2rem;
   color: var(--white);
+  
 }
 .footer-title {
   font-size: 1.2rem;
@@ -240,11 +249,7 @@ section#service.service-section {
   .main {
     padding-left: 20px;
   }
-  header {
-    padding: 0.5rem 0.5rem;
-  }
-  .navigation a {
-    margin: 0;
-  }
+ .logo{max-width: 900px;}
+ 
 }
 
