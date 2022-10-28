@@ -8,9 +8,7 @@
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-}
+
 
 :root {
   --darkblue: #040b14;
@@ -250,15 +248,3 @@ section#service.service-section {
   }
 }
 
-@media (min-width: 400) {
-  header {
-    position: fixed;
-    width: 100%;
-    max-width: inherit;
-  }
-  footer {
-    position: fixed;
-    width: 100%;
-    max-width: inherit;
-  }
-}
