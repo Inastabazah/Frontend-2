@@ -1,216 +1,255 @@
-*{
-    font-family: "IM Fell Great Primer SC";
-    font-style: normal;
-     font-variant: normal;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  font-family: "IM Fell Great Primer SC";
+  font-style: normal;
+  font-variant: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-:root{
-   --darkblue:#040b14;
-   --blue:#007aff;
-   --yellow: #ffc107;
-   --white:#f5f8fd;
-}
-a{text-decoration: none;}
 
-header{ 
-    background-color: var(--darkblue);
-    position: sticky;
-    top: 0;
-    align-items: center;
-    padding: 1rem 1rem;
-    z-index: 1;
-    height: auto;
-    
-    }
-.header{
-    margin: auto;
-   display: flex;
-   justify-content: space-between;
-   color: var(--white);
-flex-direction: row;
-align-items: center;}
 
-.logo{display: flex;
-flex-direction: row;
-justify-content:space-around;
-align-items:center;
-align-content: space-between;
-max-width: 300px; 
+:root {
+  --darkblue: #040b14;
+  --blue: #007aff;
+  --yellow: #ffc107;
+  --white: #f5f8fd;
 }
 
-.header .logo img {margin: 9px 9px;
-    display: block;
-    width: 60px;
-    border: 1px solid #2c2f3f;
-border-radius: 50%;
-}
-.header .logo h1{font-weight: 600;
-font-size: 2rem;}
 
-.navigation{margin: auto 0;}
 
-.navigation a{color: var(--white);
-    
-    font-size: 1.2rem;
-    font-weight:600;
-margin: 12px 12px;
+a {
+  text-decoration: none;
 }
 
-.navigation a:hover{ color: var(--yellow);}
-
-
-
-
-
-main{padding: 1rem;
-    display: flex;
-    flex-direction: column;}
-    
-    section{ 
-    margin: auto;
-    }
-    .main{
-        display: flex; 
-        background-color: var(--white);
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(/style1/istockphoto-679554232-612x612.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    align-items: center;
-    padding: 1rem 0 0 162px;
-    }
-    
-    
-    
-    .main h2{color: var(--darkblue);
-    font-size: 4rem;
-    font-weight: 400;}
-    .main span{color: var(--dark-blue);
-        display: inline-block;
-        font-size: 2rem;
-        font-weight: 700;
-    }
-    
-    
-    .main-btn{background-color: var(--blue);
-    color: var(--yellow);
-    border-radius: 16px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 1rem 1.3rem;
-    margin-top: 1.2rem;
-    margin-bottom:1.2rem ;
-    display: inline-block;
-    transition: 0.7s ease;
-    }
-    
-    .main-btn:hover{background-color: var(--blue);
-    transform: scale(1.7);}
-    
-    .social-icons a {color: var(--yellow);
-    font-size: 2rem;
-    margin-inline-start: 10px;
-    }
-    
-    /* srervice*/
-
-   
-    .title{text-align: center;
-    color: var(--yellow);
-    font-size: 2rem;
-    margin: 2rem 1rem ;
+header {
+  background-color: var(--darkblue);
+  
+  align-items: center;
+  padding: 1rem 0.5rem;
+  z-index: 1;
+  height: auto;
+  position: sticky;
+  top: 0;
+  
 }
-    
-    .contant{display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1.5rem ;
-    justify-content: center;
-    padding: 2rem;
-    
-    
-    }
-    .cards{min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
+.header {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  flex-direction: row;
+  align-items: center;
 }
-    
-    .card{background-color:var(--darkblue);
-    width: 300px;
-    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
-     padding: 24px;
-    border-radius: 9px;
-    transition: 0.7s ease;
-    text-align: center;
-    }
 
-    .card h3{color: var(--white);}
-    .card p{color: var(--blue);}
-    .card ul{color: var(--blue);}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  max-width: 300px;
+}
 
-    
-    .card:hover{
-        transform: scale(1.1);
-    }
-    .card .icon{
-        color: var(--yellow);
-        font-size: 1em;
-    }
-    .card-info h3{ color: var(--light-blue);
-    }
-    
-    
-    .service-section{background-color: var(--dark-blue);
-        padding:6rem 1rem;
-    }
-    
-    .service-card{background-color:white;
-    border: 1px solid #fff;
-    min-height: 160px;
-    width: 450px;
-    border-radius: 8px;
-    transition: 0.7s ease;
-    }
-    .service-card:hover{transform: scale(1.1);
-    opacity: 0.8;}
-    
-    .service-card-img img{
-        width: 100%;
-        max-height: 200px;
-        border-radius: 8px;
-    
-    }
-    
-    
-    
-    
-    
-    .contact{padding:3rem 0 ;}
-    
-    .footer{background-color: var(--darkblue);
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    color:var(--white)}
-    .footer-title{font-size: 1.2rem;
-    font-weight: 700;}
-    .footer-title span{ color: var(--yellow);}
-    
-    @media(max-width :1000px){
-        .main{padding-left: 5px;}
-        header{padding: 0.5rem 0.5rem;}
-        .project-card {width: 320px;}
-    }
-    
-   
-    
+.header .logo img {
+  margin: 9px 9px;
+  display: block;
+  width: 60px;
+  border: 1px solid var(--yellow);
+  border-radius: 50%;
+}
+.header .logo h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
 
-    
+.navigation {
+  margin: 0;
+}
+
+.navigation a {
+  color: var(--white);
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1px 5px;
+}
+
+.navigation a:hover {
+  color: var(--yellow);
+}
+
+main {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin: auto;
+  padding: 1.5rem;
+}
+.main {
+  display: flex;
+  background-color: var(--white);
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/style1/istockphoto-679554232-612x612.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.main h2 {
+  color: var(--darkblue);
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.main span {
+  color: var(--dark-blue);
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main-btn {
+  background-color: var(--blue);
+  color: var(--yellow);
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 1rem 1.3rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+  transition: transform 0.7s;
+}
+
+.main-btn:hover {
+  background-color: var(--blue);
+  transform: rotate(360deg);
+}
+
+.social-icons a {
+  color: var(--yellow);
+  font-size: 2rem;
+  margin-inline-start: 10px;
+}
+
+.title {
+  text-align: center;
+  color: var(--yellow);
+  font-size: 3rem;
+  margin: 6rem 2rem;
+}
+
+.contant {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+.cards {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--darkblue);
+  width: 300px;
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  padding: 24px;
+  border-radius: 9px;
+  transition: 0.7s ease;
+  text-align: center;
+  align-items: center;
+}
+
+.card h3 {
+  color: var(--white);
+  font-size: 2rem;
+}
+.card p {
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+.card ul {
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.card .icon i {
+  color: var(--yellow);
+  font-size: 3em;
+}
+.card-info h3 {
+  color: var(--white);
+}
+
+section#service.service-section {
+  background-color: var(--darkblue);
+  padding: 1rem 1rem;
+}
+
+.service-card {
+  background-color: white;
+  border: 1px solid #fff;
+  min-height: 160px;
+  width: 350px;
+  border-radius: 50%;
+  transition: 0.7s ease;
+}
+.service-card:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.service-card-img img {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+.contact {
+  padding: 3rem 0;
+}
+
+
+
+
+.footer {
+  background-color: var(--darkblue);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  color: var(--white);
+  
+}
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.footer-title span {
+  color: var(--yellow);
+}
+
+@media (max-width: 1000px) {
+  .main {
+    padding-left: 20px;
+  }
+ .logo{max-width: 900px;}
+ 
+}
+
