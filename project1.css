@@ -8,8 +8,6 @@
   scroll-behavior: smooth;
 }
 
-
-
 :root {
   --darkblue: #040b14;
   --blue: #007aff;
@@ -17,22 +15,19 @@
   --white: #f5f8fd;
 }
 
-
-
 a {
   text-decoration: none;
 }
 
 header {
   background-color: var(--darkblue);
-  
+
   align-items: center;
   padding: 1rem 0.5rem;
   z-index: 1;
   height: auto;
   position: sticky;
   top: 0;
-  
 }
 
 .header {
@@ -55,7 +50,7 @@ header {
 
 .header .logo img {
   margin: 9px 9px;
-  display: block;
+  display: inline-block;
   width: 60px;
   border: 1px solid var(--yellow);
   border-radius: 50%;
@@ -67,6 +62,7 @@ header {
 
 .navigation {
   margin: 0;
+  display: inline-block;
 }
 
 .navigation a {
@@ -154,7 +150,7 @@ section {
   flex-wrap: wrap;
   gap: 1.2rem;
   justify-content: center;
-  padding: 2rem;
+ 
 }
 .cards {
   min-height: 70vh;
@@ -226,16 +222,12 @@ section#service.service-section {
   padding: 3rem 0;
 }
 
-
-
-
 .footer {
   background-color: var(--darkblue);
   display: flex;
   justify-content: space-between;
   padding: 2rem;
   color: var(--white);
-  
 }
 .footer-title {
   font-size: 1.2rem;
@@ -249,7 +241,7 @@ section#service.service-section {
   .main {
     padding-left: 20px;
   }
- .logo{max-width: 900px;}
- 
+  .logo {
+    max-width: 900px;
+  }
 }
-
