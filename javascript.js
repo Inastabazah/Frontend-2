@@ -1,5 +1,15 @@
-onload=function(){
-    document.querySelector('h1').style.backgroundColor='red';
-    document.getElementsByClassName('p')[0].style.backgroundColor='blue';
-    document.getElementById('h2').style.backgroundColor='green'
+const menu= document.getElementsByClassName('demo')[0]
+
+function addaiatemataolist(number){
+ 
+    for(let i=1;i<=number;i++){
+        let li=document.createElement('li')
+        li.textContent= i+"item" 
+        menu.appendChild(li);
+    }
+
 }
+addaiatemataolist(10)
+
+
+
