@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+   
+  }
+
+
+
+
+.hero{height: 100%;
+width: 100%;
+background-image: url(/style1/imgs/women1.jpg);
+background-position: center;
+background-size:contain;
+position: absolute;
+
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position:relative;
+    margin:6% auto ;
+    padding: 5px;
+    background-color: white;
+}
+.button-box{
+  width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{top: 0;
+left: 0;
+position: absolute;
+width: 110px;
+height: 100%;
+background:linear-gradient(to right, #8cd0e3,#fff);
+border-radius: 30px;
+transition: 0.5s;}
+
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+.social-icons img{
+ width: 30px;   
+}
